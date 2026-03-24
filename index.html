@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supreme Infotech Solutions — IT Solutions That Work</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a class="nav-logo" href="#">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="44" stroke="#C98A2E" stroke-width="5" fill="none"/>
+      <path d="M26 50 A24 24 0 0 1 74 50" stroke="#C98A2E" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M26 50 A24 24 0 0 0 74 50" stroke="#C98A2E" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <line x1="50" y1="26" x2="50" y2="74" stroke="#C98A2E" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="50" cy="24" r="7" fill="#3ecf6a"/>
+    </svg>
+    <div class="nav-logo-text">Supreme<br><span>Infotech</span> Solutions</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="btn-outline-nav" onclick="window.location.href='about.html'">About Us</button>
+    <button class="btn-filled-nav" onclick="openModal('modal-quote')">Get a Quote</button>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="scan-line"></div>
+  </div>
+
+  <div class="hero-visual">
+    <svg viewBox="0 0 600 480" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.55">
+      <circle cx="300" cy="240" r="200" stroke="rgba(201,138,46,0.2)" stroke-width="1" stroke-dasharray="6 4"/>
+      <circle cx="300" cy="240" r="160" stroke="rgba(201,138,46,0.15)" stroke-width="1"/>
+      <circle cx="300" cy="240" r="120" stroke="rgba(201,138,46,0.1)" stroke-width="1" stroke-dasharray="3 6"/>
+      <line x1="300" y1="60" x2="300" y2="420" stroke="rgba(201,138,46,0.12)" stroke-width="1"/>
+      <line x1="120" y1="240" x2="480" y2="240" stroke="rgba(201,138,46,0.12)" stroke-width="1"/>
+      <rect x="230" y="200" width="100" height="72" rx="10" fill="rgba(201,138,46,0.12)" stroke="rgba(201,138,46,0.5)" stroke-width="2"/>
+      <rect x="330" y="218" width="32" height="36" rx="6" fill="rgba(201,138,46,0.1)" stroke="rgba(201,138,46,0.4)" stroke-width="1.5"/>
+      <circle cx="270" cy="236" r="26" fill="rgba(8,9,13,0.8)" stroke="rgba(201,138,46,0.6)" stroke-width="2"/>
+      <circle cx="270" cy="236" r="17" fill="rgba(201,138,46,0.08)" stroke="rgba(201,138,46,0.4)" stroke-width="1.5"/>
+      <circle cx="270" cy="236" r="9" fill="rgba(201,138,46,0.15)" stroke="rgba(201,138,46,0.5)" stroke-width="1"/>
+      <circle cx="265" cy="231" r="3" fill="rgba(255,255,255,0.3)"/>
+      <line x1="230" y1="200" x2="140" y2="140" stroke="rgba(62,207,106,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
+      <line x1="230" y1="272" x2="140" y2="340" stroke="rgba(62,207,106,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
+      <rect x="90" y="110" width="60" height="60" rx="4" stroke="rgba(62,207,106,0.5)" stroke-width="1.5" fill="none"/>
+      <rect x="90" y="310" width="60" height="60" rx="4" stroke="rgba(201,138,46,0.5)" stroke-width="1.5" fill="none"/>
+      <path d="M90 125 L90 110 L105 110" stroke="rgba(62,207,106,0.9)" stroke-width="2" fill="none"/>
+      <path d="M135 110 L150 110 L150 125" stroke="rgba(62,207,106,0.9)" stroke-width="2" fill="none"/>
+      <path d="M90 155 L90 170 L105 170" stroke="rgba(62,207,106,0.9)" stroke-width="2" fill="none"/>
+      <path d="M150 155 L150 170 L135 170" stroke="rgba(62,207,106,0.9)" stroke-width="2" fill="none"/>
+      <path d="M370 200 Q420 210 420 236 Q420 262 370 272" stroke="rgba(201,138,46,0.3)" stroke-width="1.5" fill="none"/>
+      <path d="M380 185 Q450 205 450 236 Q450 267 380 287" stroke="rgba(201,138,46,0.2)" stroke-width="1.5" fill="none"/>
+      <path d="M390 170 Q480 200 480 236 Q480 272 390 302" stroke="rgba(201,138,46,0.12)" stroke-width="1.5" fill="none"/>
+      <circle cx="140" cy="140" r="3" fill="rgba(62,207,106,0.7)"/>
+      <circle cx="140" cy="340" r="3" fill="rgba(201,138,46,0.7)"/>
+      <circle cx="460" cy="180" r="2" fill="rgba(62,207,106,0.5)"/>
+      <circle cx="460" cy="300" r="2" fill="rgba(201,138,46,0.5)"/>
+      <circle cx="490" cy="120" r="14" fill="rgba(62,207,106,0.12)" stroke="rgba(62,207,106,0.4)" stroke-width="1.5"/>
+      <path d="M490 107 Q500 107 500 117 Q500 127 490 134 Q480 127 480 117 Q480 107 490 107Z" fill="rgba(62,207,106,0.3)" stroke="rgba(62,207,106,0.6)" stroke-width="1.5"/>
+      <circle cx="490" cy="117" r="4" fill="rgba(62,207,106,0.8)"/>
+      <rect x="80" y="390" width="48" height="58" rx="6" fill="rgba(100,149,237,0.1)" stroke="rgba(100,149,237,0.4)" stroke-width="1.5"/>
+      <rect x="90" y="400" width="28" height="18" rx="3" fill="rgba(100,149,237,0.15)" stroke="rgba(100,149,237,0.3)" stroke-width="1"/>
+      <circle cx="104" cy="430" r="8" stroke="rgba(100,149,237,0.5)" stroke-width="1.5" fill="none"/>
+      <line x1="104" y1="430" x2="104" y2="442" stroke="rgba(100,149,237,0.5)" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-icon"></div>
+      <span class="badge-text">Established 2017 · IT Solutions That Work</span>
+    </div>
+    <h1 class="hero-h1">Secure Your<br>Business,<br><em>Completely.</em></h1>
+    <p class="hero-sub">Advanced CCTV surveillance, GPS tracking, access control & IT infrastructure — customized for your operation.</p>
+    <div class="hero-btns">
+      <button class="btn-hero-primary">Explore Services</button>
+      <button class="btn-hero-outline">About Us →</button>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <span class="hero-bottom-label">Our Services</span>
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">CCTV Surveillance</span><span class="marquee-dot"></span>
+        <span class="marquee-item">GPS Tracking</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Access Control</span><span class="marquee-dot"></span>
+        <span class="marquee-item">IT Networking</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Data Cabling</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Wireless Solutions</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Security Systems</span><span class="marquee-dot"></span>
+        <span class="marquee-item">CCTV Surveillance</span><span class="marquee-dot"></span>
+        <span class="marquee-item">GPS Tracking</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Access Control</span><span class="marquee-dot"></span>
+        <span class="marquee-item">IT Networking</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Data Cabling</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Wireless Solutions</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Security Systems</span><span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INTRO ═══ -->
+<section class="s-intro reveal" id="about">
+  <div>
+    <div class="intro-eyebrow">A New Standard in Security</div>
+    <h2 class="intro-h2">Game Changing<br>Technology &<br>Solutions</h2>
+    <p class="intro-p">Launched in 2017, Supreme Infotech Solutions is dedicated to providing small to medium-sized businesses with reliable, effective technology solutions that drive real results.</p>
+    <p class="intro-p">Our team brings over a decade of experience in IT — giving us the edge to deliver solutions that add operational efficiency, productivity, and cost savings.</p>
+    <div class="intro-tagline">Supreme Infotech Solutions — IT Solutions That Work.</div>
+  </div>
+  <div class="intro-right">
+    <div class="intro-stat-card">
+      <div class="isc-num">8+</div>
+      <div><div class="isc-label">Years of Experience</div><div class="isc-sub">In the IT industry</div></div>
+    </div>
+    <div class="intro-stat-card">
+      <div class="isc-num">200+</div>
+      <div><div class="isc-label">Projects Delivered</div><div class="isc-sub">Across T&T and the region</div></div>
+    </div>
+    <div class="intro-stat-card">
+      <div class="isc-num">50+</div>
+      <div><div class="isc-label">Happy Clients</div><div class="isc-sub">SMEs across industries</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="s-services reveal" id="services">
+  <div class="section-header">
+    <div class="section-eyebrow">What We Offer</div>
+    <h2 class="section-h2">Complete <em>Security</em><br>& IT Solutions</h2>
+  </div>
+
+  <div class="svc-tabs">
+    <div class="svc-tab active" onclick="switchTab(0)">CCTV Surveillance</div>
+    <div class="svc-tab" onclick="switchTab(1)">GPS Tracking</div>
+    <div class="svc-tab" onclick="switchTab(2)">Access Control</div>
+    <div class="svc-tab" onclick="switchTab(3)">IT Networking</div>
+  </div>
+
+  <div class="svc-panels">
+    <!-- CCTV -->
+    <div class="svc-panel active">
+      <div class="svc-panel-left">
+        <div class="svc-panel-badge"><span class="svc-panel-badge-icon">📷</span><span class="svc-panel-badge-text">Surveillance</span></div>
+        <h3 class="svc-panel-h3">HD CCTV<br>Surveillance</h3>
+        <p class="svc-panel-p">Full HD and 4K camera systems with remote viewing, motion detection, and 24/7 recording — giving you total peace of mind wherever you are.</p>
+        <ul class="svc-bullets">
+          <li>Indoor & outdoor camera installations</li>
+          <li>Remote live viewing on any device</li>
+          <li>Motion detection & smart alerts</li>
+          <li>Night vision & wide-angle options</li>
+          <li>DVR / NVR storage solutions</li>
+        </ul>
+        <button class="svc-cta">Learn More →</button>
+      </div>
+      <div class="svc-panel-right">
+        <div class="svc-visual-box">
+          <span class="svc-icon-large">📷</span>
+          <div class="svc-visual-tag">
+            <div class="svc-visual-tag-label">System Status</div>
+            <div class="svc-visual-tag-val">● Live Recording</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GPS -->
+    <div class="svc-panel">
+      <div class="svc-panel-left">
+        <div class="svc-panel-badge"><span class="svc-panel-badge-icon">📍</span><span class="svc-panel-badge-text">Tracking</span></div>
+        <h3 class="svc-panel-h3">Real-Time<br>GPS Tracking</h3>
+        <p class="svc-panel-p">Land-based fleet and asset tracking powered by GPS technology. Monitor your vehicles, personnel, and equipment in real time from any device.</p>
+        <ul class="svc-bullets">
+          <li>Real-time vehicle & fleet tracking</li>
+          <li>Geofencing & zone alerts</li>
+          <li>Trip history & route playback</li>
+          <li>Driver behavior reporting</li>
+          <li>Cloud-based dashboard access</li>
+        </ul>
+        <button class="svc-cta">Learn More →</button>
+      </div>
+      <div class="svc-panel-right">
+        <div class="svc-visual-box">
+          <span class="svc-icon-large">📍</span>
+          <div class="svc-visual-tag">
+            <div class="svc-visual-tag-label">Tracking Mode</div>
+            <div class="svc-visual-tag-val">● Active · 99.9% Uptime</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Access Control -->
+    <div class="svc-panel">
+      <div class="svc-panel-left">
+        <div class="svc-panel-badge"><span class="svc-panel-badge-icon">🔐</span><span class="svc-panel-badge-text">Access Control</span></div>
+        <h3 class="svc-panel-h3">Advanced<br>Access Control</h3>
+        <p class="svc-panel-p">Control exactly who enters your premises with state-of-the-art biometric, key card, and PIN access systems — scalable for any building size.</p>
+        <ul class="svc-bullets">
+          <li>Biometric fingerprint & face recognition</li>
+          <li>Key card / RFID door access</li>
+          <li>PIN & multi-factor entry</li>
+          <li>Audit logs & access reporting</li>
+          <li>Integration with CCTV systems</li>
+        </ul>
+        <button class="svc-cta">Learn More →</button>
+      </div>
+      <div class="svc-panel-right">
+        <div class="svc-visual-box">
+          <span class="svc-icon-large">🔐</span>
+          <div class="svc-visual-tag">
+            <div class="svc-visual-tag-label">Access Mode</div>
+            <div class="svc-visual-tag-val">● Secured · All Doors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- IT Networking -->
+    <div class="svc-panel">
+      <div class="svc-panel-left">
+        <div class="svc-panel-badge"><span class="svc-panel-badge-icon">🌐</span><span class="svc-panel-badge-text">IT Infrastructure</span></div>
+        <h3 class="svc-panel-h3">IT & Network<br>Infrastructure</h3>
+        <p class="svc-panel-p">End-to-end IT and network solutions including structured data and voice cabling, wireless networking, and full infrastructure deployments for your business.</p>
+        <ul class="svc-bullets">
+          <li>Structured data & voice cabling</li>
+          <li>Wireless & Wi-Fi network design</li>
+          <li>Network switches & routing</li>
+          <li>Server room setup & maintenance</li>
+          <li>IT support & consultation</li>
+        </ul>
+        <button class="svc-cta">Learn More →</button>
+      </div>
+      <div class="svc-panel-right">
+        <div class="svc-visual-box">
+          <span class="svc-icon-large">🌐</span>
+          <div class="svc-visual-tag">
+            <div class="svc-visual-tag-label">Network Status</div>
+            <div class="svc-visual-tag-val">● Connected · All Systems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRUSTED BY ═══ -->
+<section class="s-trusted reveal">
+  <div class="trusted-label">Industries We Serve</div>
+  <div class="trusted-logos">
+    <span class="trusted-logo">Retail</span>
+    <span class="trusted-logo">Healthcare</span>
+    <span class="trusted-logo">Education</span>
+    <span class="trusted-logo">Hospitality</span>
+    <span class="trusted-logo">Logistics</span>
+    <span class="trusted-logo">Government</span>
+    <span class="trusted-logo">Finance</span>
+    <span class="trusted-logo">Construction</span>
+  </div>
+</section>
+
+<!-- ═══ QUOTE ═══ -->
+<section class="s-quote reveal">
+  <div class="quote-inner">
+    <div class="quote-logo-placeholder">⭐ Client Testimonial</div>
+    <div class="quote-text">
+      "Supreme Infotech Solutions transformed our security setup. <em>Professional, fast, and reliable</em> — they understood exactly what our business needed."
+    </div>
+    <div class="quote-author"><strong>Business Owner</strong> · Retail Client, Port of Spain</div>
+  </div>
+</section>
+
+<!-- ═══ WHY US ═══ -->
+<section class="s-why reveal">
+  <div class="section-header">
+    <div class="section-eyebrow">Why Choose Us</div>
+    <h2 class="section-h2">The <em>SIS</em> Difference</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-num">01</div>
+      <div class="why-title">Decade of Expertise</div>
+      <div class="why-text">Our team has over 10 years of hands-on experience in the IT industry — we've seen it all and can solve it all.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">02</div>
+      <div class="why-title">Tailored Solutions</div>
+      <div class="why-text">No cookie-cutter packages. Every solution is customized to your specific business needs, budget, and environment.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">03</div>
+      <div class="why-title">Proven Reliability</div>
+      <div class="why-text">We've built lasting relationships with over 50 clients because we deliver on our promises, every single time.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">04</div>
+      <div class="why-title">End-to-End Service</div>
+      <div class="why-text">From consultation and installation to ongoing support — we're your single point of contact for all IT security needs.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">05</div>
+      <div class="why-title">Current Technology</div>
+      <div class="why-text">We stay ahead of the curve, offering the latest in CCTV, GPS, access control, and networking technology.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">06</div>
+      <div class="why-title">Peace of Mind</div>
+      <div class="why-text">Our mission is your safety. We don't just install systems — we ensure they work, always.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BANNER ═══ -->
+<section class="s-cta reveal" id="contact">
+  <div class="cta-left">
+    <h2 class="cta-h2">Ready to Secure<br>Your <em>Business?</em></h2>
+    <p class="cta-sub">Get in touch today for a free consultation and customized quote — no obligation, just expert advice.</p>
+  </div>
+  <div class="cta-btns">
+    <button class="btn-cta-primary" onclick="openModal('modal-quote')">Get a Free Quote</button>
+    <button class="btn-cta-outline" onclick="openModal('modal-contact')">Contact Us</button>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">
+        <svg width="28" height="28" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="#C98A2E" stroke-width="5" fill="none"/>
+          <path d="M26 50 A24 24 0 0 1 74 50" stroke="#C98A2E" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M26 50 A24 24 0 0 0 74 50" stroke="#C98A2E" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <line x1="50" y1="26" x2="50" y2="74" stroke="#C98A2E" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="50" cy="24" r="7" fill="#3ecf6a"/>
+        </svg>
+        Supreme <span>Infotech</span> Solutions
+      </div>
+      <p class="footer-desc">IT solutions that work. Established May 2017, delivering reliable technology solutions across Trinidad & Tobago.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <a class="footer-link" href="#services">CCTV Surveillance</a>
+      <a class="footer-link" href="#services">GPS Tracking</a>
+      <a class="footer-link" href="#services">Access Control</a>
+      <a class="footer-link" href="#services">IT Networking</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <a class="footer-link" href="about.html">About Us</a>
+      <a class="footer-link" href="#">Our Clients</a>
+      <a class="footer-link" href="#">Careers</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <a class="footer-link" href="#contact">Get a Quote</a>
+      <a class="footer-link" href="mailto:sales@supremeinfotech.com">sales@supremeinfotech.com</a>
+      <a class="footer-link" href="tel:+18680000000">+1 (868) 000-0000</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Supreme Infotech Solutions. All Rights Reserved.</span>
+    <div class="footer-social">
+      <div class="social-btn">f</div>
+      <div class="social-btn">in</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ MODAL: GET A QUOTE ═══ -->
+<div class="modal-overlay" id="modal-quote">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-quote')">✕</button>
+    <div id="quote-form-body">
+      <div class="modal-eyebrow">Free Consultation</div>
+      <div class="modal-title">Get a <em>Quote</em></div>
+      <p class="modal-sub">Fill in your details and we'll get back to you within 24 hours with a customized solution.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John"/>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Doe"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@company.com"/>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+1 (868) 000-0000"/>
+      </div>
+      <div class="form-group">
+        <label>Service Interested In</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>CCTV Surveillance</option>
+          <option>GPS Tracking</option>
+          <option>Access Control</option>
+          <option>IT Networking</option>
+          <option>Multiple Services</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Tell Us About Your Needs</label>
+        <textarea rows="3" placeholder="Briefly describe your business and what you're looking for..."></textarea>
+      </div>
+      <button class="btn-modal-submit" onclick="submitForm('quote-form-body', 'quote-success')">Send Request →</button>
+    </div>
+    <div class="form-success" id="quote-success">
+      <div class="form-success-icon">✅</div>
+      <div class="form-success-title">Request Sent!</div>
+      <p class="form-success-sub">Thanks! We'll reach out within 24 hours with your personalized quote.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MODAL: CONTACT US ═══ -->
+<div class="modal-overlay" id="modal-contact">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-contact')">✕</button>
+    <div id="contact-form-body">
+      <div class="modal-eyebrow">Reach Out</div>
+      <div class="modal-title">Contact <em>Us</em></div>
+      <p class="modal-sub">Have a question or need support? Send us a message and we'll be in touch shortly.</p>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="John Doe"/>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@company.com"/>
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" placeholder="e.g. CCTV Installation Inquiry"/>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="4" placeholder="Write your message here..."></textarea>
+      </div>
+      <button class="btn-modal-submit" onclick="submitForm('contact-form-body', 'contact-success')">Send Message →</button>
+    </div>
+    <div class="form-success" id="contact-success">
+      <div class="form-success-icon">✅</div>
+      <div class="form-success-title">Message Sent!</div>
+      <p class="form-success-sub">We've received your message and will get back to you as soon as possible.</p>
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
