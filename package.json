@@ -2,6 +2,7 @@
   "name": "supreme-infotech-solutions",
   "version": "1.0.0",
   "description": "Supreme Infotech Solutions website with Vercel serverless functions",
+  "main": "index.js",
   "dependencies": {
     "resend": "^3.2.0"
   }
