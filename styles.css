@@ -327,9 +327,11 @@ nav {
 
 /* ─── TESTIMONIAL ─── */
 .s-quote {
-  padding: 100px 64px; background: var(--dark);
+  padding: 80px 64px; background: var(--dark);
   display: flex; align-items: center; justify-content: center;
+  min-height: 340px;
 }
+.s-quote > img { object-position: center 30%; }
 .quote-inner { max-width: 800px; text-align: center; }
 .quote-logo-placeholder {
   font-family: 'Barlow Condensed', sans-serif; font-size: 18px;
