@@ -6,6 +6,139 @@
   <title>Supreme Infotech Solutions — IT Solutions That Work</title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
+
+  <!-- ── Image styles injected here so styles.css is untouched ── -->
+  <style>
+    /* ── HERO IMAGE ── */
+    .hero {
+      position: relative;
+    }
+    .hero-img-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .hero-img-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.18;
+      filter: grayscale(40%);
+    }
+    .hero-bg,
+    .hero-visual,
+    .hero-content,
+    .hero-bottom {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── INTRO / ABOUT PHOTO ── */
+    .intro-photo-wrap {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      border: 1px solid rgba(201,138,46,0.3);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    }
+    .intro-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .intro-photo-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: rgba(8,9,13,0.85);
+      border: 1px solid rgba(201,138,46,0.4);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+    }
+    .intro-photo-badge strong {
+      display: block;
+      color: #C98A2E;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    /* ── SERVICE PANEL IMAGES ── */
+    .svc-visual-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .svc-visual-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+      filter: brightness(0.75) saturate(0.85);
+      transition: filter 0.4s ease, transform 0.5s ease;
+    }
+    .svc-visual-box:hover img {
+      filter: brightness(0.85) saturate(1);
+      transform: scale(1.03);
+    }
+    /* keep the status tag on top of the image */
+    .svc-visual-tag {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      z-index: 2;
+    }
+
+    /* ── TESTIMONIAL PHOTO ── */
+    .quote-client-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(201,138,46,0.5);
+      margin: 0 auto 16px;
+      display: block;
+    }
+
+    /* ── WHY US BACKGROUND STRIP ── */
+    .s-why {
+      position: relative;
+      overflow: hidden;
+    }
+    .s-why-bg-img {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .s-why-bg-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.07;
+      filter: grayscale(60%);
+    }
+    .s-why .section-header,
+    .s-why .why-grid {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── INTRO RIGHT: stack photo above stat cards on smaller screens ── */
+    @media (max-width: 768px) {
+      .intro-photo-wrap {
+        margin-bottom: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -27,6 +160,12 @@
 
 <!-- ═══ HERO ═══ -->
 <section class="hero">
+
+  <!-- Real photo sits behind everything at low opacity -->
+  <div class="hero-img-bg">
+    <img src="imgs/building.JPG" alt="Supreme Infotech building"/>
+  </div>
+
   <div class="hero-bg">
     <div class="scan-line"></div>
   </div>
@@ -115,6 +254,15 @@
     <div class="intro-tagline">Supreme Infotech Solutions — IT Solutions That Work.</div>
   </div>
   <div class="intro-right">
+    <!-- Office photo sits above the stat cards -->
+    <div class="intro-photo-wrap">
+      <img src="imgs/office.JPG" alt="Supreme Infotech office"/>
+      <div class="intro-photo-badge">
+        <strong>Est. 2017</strong>
+        Serving businesses across T&amp;T
+      </div>
+    </div>
+
     <div class="intro-stat-card">
       <div class="isc-num">8+</div>
       <div><div class="isc-label">Years of Experience</div><div class="isc-sub">In the IT industry</div></div>
@@ -145,6 +293,7 @@
   </div>
 
   <div class="svc-panels">
+
     <!-- CCTV -->
     <div class="svc-panel active">
       <div class="svc-panel-left">
@@ -162,7 +311,7 @@
       </div>
       <div class="svc-panel-right">
         <div class="svc-visual-box">
-          <span class="svc-icon-large">📷</span>
+          <img src="imgs/pnvf.JPG" alt="CCTV NVR System"/>
           <div class="svc-visual-tag">
             <div class="svc-visual-tag-label">System Status</div>
             <div class="svc-visual-tag-val">● Live Recording</div>
@@ -170,6 +319,7 @@
         </div>
       </div>
     </div>
+
     <!-- GPS -->
     <div class="svc-panel">
       <div class="svc-panel-left">
@@ -187,7 +337,7 @@
       </div>
       <div class="svc-panel-right">
         <div class="svc-visual-box">
-          <span class="svc-icon-large">📍</span>
+          <img src="imgs/rndmtech.JPG" alt="GPS Tracking Technology"/>
           <div class="svc-visual-tag">
             <div class="svc-visual-tag-label">Tracking Mode</div>
             <div class="svc-visual-tag-val">● Active · 99.9% Uptime</div>
@@ -195,6 +345,7 @@
         </div>
       </div>
     </div>
+
     <!-- Access Control -->
     <div class="svc-panel">
       <div class="svc-panel-left">
@@ -212,7 +363,7 @@
       </div>
       <div class="svc-panel-right">
         <div class="svc-visual-box">
-          <span class="svc-icon-large">🔐</span>
+          <img src="imgs/numpadlocks.JPG" alt="Access Control Keypad"/>
           <div class="svc-visual-tag">
             <div class="svc-visual-tag-label">Access Mode</div>
             <div class="svc-visual-tag-val">● Secured · All Doors</div>
@@ -220,6 +371,7 @@
         </div>
       </div>
     </div>
+
     <!-- IT Networking -->
     <div class="svc-panel">
       <div class="svc-panel-left">
@@ -237,7 +389,7 @@
       </div>
       <div class="svc-panel-right">
         <div class="svc-visual-box">
-          <span class="svc-icon-large">🌐</span>
+          <img src="imgs/wires.JPG" alt="IT Network Cabling"/>
           <div class="svc-visual-tag">
             <div class="svc-visual-tag-label">Network Status</div>
             <div class="svc-visual-tag-val">● Connected · All Systems</div>
@@ -245,6 +397,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -266,7 +419,12 @@
 <!-- ═══ QUOTE ═══ -->
 <section class="s-quote reveal">
   <div class="quote-inner">
-    <div class="quote-logo-placeholder">⭐ Client Testimonial</div>
+    <!-- Team photo used as testimonial visual -->
+    <img
+      class="quote-client-photo"
+      src="imgs/teamwithmartin.jpeg"
+      alt="Supreme Infotech Team"
+    />
     <div class="quote-text">
       "Supreme Infotech Solutions transformed our security setup. <em>Professional, fast, and reliable</em> — they understood exactly what our business needed."
     </div>
@@ -276,6 +434,11 @@
 
 <!-- ═══ WHY US ═══ -->
 <section class="s-why reveal">
+  <!-- Subtle background image behind the whole section -->
+  <div class="s-why-bg-img">
+    <img src="imgs/wiringmen.JPG" alt=""/>
+  </div>
+
   <div class="section-header">
     <div class="section-eyebrow">Why Choose Us</div>
     <h2 class="section-h2">The <em>SIS</em> Difference</h2>
@@ -455,7 +618,6 @@
     </div>
   </div>
 </div>
-
 
 <script src="script.js"></script>
 </body>
