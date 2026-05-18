@@ -7,138 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 
-  <!-- ── Image styles injected here so styles.css is untouched ── -->
-  <style>
-    /* ── HERO IMAGE ── */
-    .hero {
-      position: relative;
-    }
-    .hero-img-bg {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
-    }
-    .hero-img-bg img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      opacity: 0.18;
-      filter: grayscale(40%);
-    }
-    .hero-bg,
-    .hero-visual,
-    .hero-content,
-    .hero-bottom {
-      position: relative;
-      z-index: 1;
-    }
 
-    /* ── INTRO / ABOUT PHOTO ── */
-    .intro-photo-wrap {
-      position: relative;
-      border-radius: 12px;
-      overflow: hidden;
-      aspect-ratio: 4/3;
-      border: 1px solid rgba(201,138,46,0.3);
-      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
-    }
-    .intro-photo-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .intro-photo-badge {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-      background: rgba(8,9,13,0.85);
-      border: 1px solid rgba(201,138,46,0.4);
-      border-radius: 8px;
-      padding: 10px 16px;
-      font-family: 'Barlow', sans-serif;
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.85);
-      backdrop-filter: blur(8px);
-    }
-    .intro-photo-badge strong {
-      display: block;
-      color: #C98A2E;
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-
-    /* ── SERVICE PANEL IMAGES ── */
-    .svc-visual-box {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-    .svc-visual-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-radius: 12px;
-      filter: brightness(0.75) saturate(0.85);
-      transition: filter 0.4s ease, transform 0.5s ease;
-    }
-    .svc-visual-box:hover img {
-      filter: brightness(0.85) saturate(1);
-      transform: scale(1.03);
-    }
-    /* keep the status tag on top of the image */
-    .svc-visual-tag {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-      z-index: 2;
-    }
-
-    /* ── TESTIMONIAL PHOTO ── */
-    .quote-client-photo {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid rgba(201,138,46,0.5);
-      margin: 0 auto 16px;
-      display: block;
-    }
-
-    /* ── WHY US BACKGROUND STRIP ── */
-    .s-why {
-      position: relative;
-      overflow: hidden;
-    }
-    .s-why-bg-img {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-    }
-    .s-why-bg-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.07;
-      filter: grayscale(60%);
-    }
-    .s-why .section-header,
-    .s-why .why-grid {
-      position: relative;
-      z-index: 1;
-    }
-
-    /* ── INTRO RIGHT: stack photo above stat cards on smaller screens ── */
-    @media (max-width: 768px) {
-      .intro-photo-wrap {
-        margin-bottom: 24px;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -153,7 +22,6 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <button class="btn-outline-nav" onclick="window.location.href='about.html'">About Us</button>
     <button class="btn-filled-nav" onclick="openModal('modal-quote')">Get a Quote</button>
   </div>
 </nav>
@@ -311,7 +179,7 @@
       </div>
       <div class="svc-panel-right">
         <div class="svc-visual-box">
-          <img src="imgs/cctv.png" alt="CCTV NVR System"/>
+          <img src="imgs/pnvf.JPG" alt="CCTV NVR System"/>
           <div class="svc-visual-tag">
             <div class="svc-visual-tag-label">System Status</div>
             <div class="svc-visual-tag-val">● Live Recording</div>
@@ -417,14 +285,10 @@
 </section>
 
 <!-- ═══ QUOTE ═══ -->
-<section class="s-quote reveal">
-  <div class="quote-inner">
-    <!-- Team photo used as testimonial visual -->
-    <img
-      class="quote-client-photo"
-      src="imgs/teamwithmartin.jpeg"
-      alt="Supreme Infotech Team"
-    />
+<section class="s-quote reveal" style="position:relative;overflow:hidden;">
+  <img src="imgs/teamwithmartin.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0.22;filter:grayscale(30%);z-index:0;"/>
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,9,13,0.85) 0%,rgba(8,9,13,0.55) 50%,rgba(8,9,13,0.85) 100%);z-index:1;"></div>
+  <div class="quote-inner" style="position:relative;z-index:2;">
     <div class="quote-text">
       "Supreme Infotech Solutions transformed our security setup. <em>Professional, fast, and reliable</em> — they understood exactly what our business needed."
     </div>
